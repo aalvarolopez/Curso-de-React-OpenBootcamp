@@ -3,6 +3,7 @@ import { LEVELS } from '../../models/levels.enum';
 import { Task } from '../../models/task.class';
 import TaskComponent from '../pure/task';
 
+// test
 const TaskListComponent = () => {
 
     const defaultTask = new Task('Example', 'Default desc', false, LEVELS.NORMAL);
