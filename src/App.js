@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import GreetingF from './components/pure/greetingF';
-import TaskListComponent from './components/container/task_list';
-import ContactListComponent from './components/container/contact_list';
+import { Contact } from './models/contact.class';
+import ContactComponent from './components/pure/contact';
 
 function App() {
+
+  const defaultContact = new Contact("Álvaro", "Álvaro López", "alvaroalvaro1997@gmail.com", false)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +17,7 @@ function App() {
         {/* <GreetingF name="Álvaro"></GreetingF> */}
         {/* List task component */}
         {/* <TaskListComponent></TaskListComponent> */}
-        <ContactListComponent></ContactListComponent>
+        <ContactComponent contact={defaultContact}></ContactComponent>
       </header>
     </div>
   );
