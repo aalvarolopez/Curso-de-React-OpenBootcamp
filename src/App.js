@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import { Contact } from './models/contact.class';
 import ContactComponent from './components/pure/contact';
+import Ejemplo1 from './hooks/ejemplo1';
+import Ejemplo2 from './hooks/ejemplo2';
+import Ejemplo4 from './hooks/ejemplo4';
+import MyComponentWithContext from './hooks/ejemplo3';
 
 function App() {
 
@@ -17,7 +21,15 @@ function App() {
         {/* <GreetingF name="Álvaro"></GreetingF> */}
         {/* List task component */}
         {/* <TaskListComponent></TaskListComponent> */}
-        <ContactComponent contact={defaultContact}></ContactComponent>
+        {/* <ContactComponent contact={defaultContact}></ContactComponent> */}
+        {/* hook use example */}
+        {/* <Ejemplo2></Ejemplo2> */}
+        {/* <MyComponentWithContext></MyComponentWithContext> */}
+        <Ejemplo4 nombre="Álvaro">
+          <h3>
+            Content of props.children
+          </h3>
+        </Ejemplo4>
       </header>
     </div>
   );
