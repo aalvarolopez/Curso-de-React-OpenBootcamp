@@ -8,6 +8,8 @@ import Ejemplo4 from './hooks/ejemplo4';
 import MyComponentWithContext from './hooks/ejemplo3';
 import TaskListComponent from './components/container/task_list';
 import GreetingStyled from './components/pure/greetingStyled';
+import Clock from './components/pure/clock';
+import ClockF from './components/pure/clockF';
 
 function App() {
 
@@ -32,7 +34,9 @@ function App() {
             Content of props.children
           </h3>
         </Ejemplo4> */}
-        <GreetingStyled name="Álvaro"></GreetingStyled>
+        {/* <GreetingStyled name="Álvaro"></GreetingStyled> */}
+        <Clock></Clock>
+        <ClockF></ClockF>
       </header>
     </div>
   );
