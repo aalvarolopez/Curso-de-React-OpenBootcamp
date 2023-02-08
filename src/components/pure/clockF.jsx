@@ -31,7 +31,7 @@ const ClockF = () => {
         return () => {
             clearInterval(timerID);
         };
-    },);
+    },[state]);
 
     return (
         <div>
