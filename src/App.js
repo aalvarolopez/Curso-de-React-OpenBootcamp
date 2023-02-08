@@ -6,6 +6,8 @@ import Ejemplo1 from './hooks/ejemplo1';
 import Ejemplo2 from './hooks/ejemplo2';
 import Ejemplo4 from './hooks/ejemplo4';
 import MyComponentWithContext from './hooks/ejemplo3';
+import TaskListComponent from './components/container/task_list';
+import GreetingStyled from './components/pure/greetingStyled';
 
 function App() {
 
@@ -25,11 +27,12 @@ function App() {
         {/* hook use example */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MyComponentWithContext></MyComponentWithContext> */}
-        <Ejemplo4 nombre="Álvaro">
+        {/* <Ejemplo4 nombre="Álvaro">
           <h3>
             Content of props.children
           </h3>
-        </Ejemplo4>
+        </Ejemplo4> */}
+        <GreetingStyled name="Álvaro"></GreetingStyled>
       </header>
     </div>
   );
